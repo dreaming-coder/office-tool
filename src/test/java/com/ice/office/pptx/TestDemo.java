@@ -13,7 +13,7 @@ import java.nio.file.Files;
 public class TestDemo {
     public static void main(String[] args) {
         try {
-            new XMLSlideShow(Files.newInputStream(new File("a.pptx").toPath()));
+            XMLSlideShow xmlSlideShow = new XMLSlideShow(Files.newInputStream(new File("test.pptx").toPath()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -23,6 +23,9 @@ public class TestDemo {
     @BeforeEach
     public void s(){
         System.out.println("hello");
-        log.debug("====fsdsfsfsdfsdfds{}",123);
+        log.debug("debug message");
+        log.info("info message");
+        log.warn("warn message");
+        log.error("error message");
     }
 }
