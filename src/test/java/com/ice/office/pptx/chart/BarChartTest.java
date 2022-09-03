@@ -6,9 +6,6 @@ import com.ice.office.domain.xlsx.Workbook;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BarChartTest extends ChartTest {
     protected static BarChart barChart;
 
